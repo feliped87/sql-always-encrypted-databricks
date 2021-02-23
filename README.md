@@ -1,0 +1,1 @@
+# sql-always-encrypted-databricks

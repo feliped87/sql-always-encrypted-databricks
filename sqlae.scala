@@ -19,7 +19,7 @@ import java.util.concurrent.Executors
 // COMMAND ----------
 
 // DBTITLE 1,Setup Connection Properties
-val jdbcurl = "jdbc:sqlserver://felipedb2.database.windows.net:1433;databaseName=felipedb"
+val jdbcurl = "jdbc:sqlserver://-.database.windows.net:1433;databaseName=-"
 val dbTable = "dbo.Patients"
 
 // In the below example, we're using a Databricks utility that facilitates acquiring secrets from 
@@ -32,7 +32,7 @@ val principalClientId = dbutils.secrets.get(scope="aescope",key="principalid")
 val principalSecret = dbutils.secrets.get(scope="aescope",key="secret")
 
 // Located in App Registrations from Azure Portal
-val TenantId = "72f988bf-86f1-41af-91ab-2d7cd011db47"
+val TenantId = "-"
 
 val authority = "https://login.windows.net/" + TenantId
 val resourceAppIdURI = "https://database.windows.net/.default"
